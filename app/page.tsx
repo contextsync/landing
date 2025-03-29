@@ -45,13 +45,13 @@ export default function Home() {
           </nav>
           <div className="flex items-center gap-4">
             <ThemeToggle />
-            <Button
+            {/* <Button
               variant="outline"
               size="sm"
               className="text-black dark:text-white border-black/20 dark:border-white/20 hover:bg-gray-100 dark:hover:bg-black dark:hover:text-cyan-400 uppercase"
             >
               Log_In
-            </Button>
+            </Button> */}
             <Button
               size="sm"
               className="bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-500 dark:hover:bg-cyan-400 text-white dark:text-black font-medium uppercase"
@@ -323,7 +323,7 @@ export default function Home() {
                   <p className="text-black/70 dark:text-white/70 font-mono">For power users</p>
                 </div>
                 <div className="mt-4 flex items-baseline text-3xl font-bold text-black dark:text-white">
-                  $29<span className="text-sm font-normal text-black/50 dark:text-white/50">/month</span>
+                  TBC<span className="text-sm font-normal text-black/50 dark:text-white/50">/month</span>
                 </div>
                 <ul className="mt-6 space-y-2 text-sm text-black/70 dark:text-white/70 font-mono">
                   <li className="flex items-center gap-2">
@@ -528,7 +528,7 @@ export default function Home() {
             &copy; {new Date().getFullYear()} ContextSync. All rights reserved.
           </p>
           <div className="flex gap-4">
-            <Link
+            {/* <Link
               href="#"
               className="text-sm font-medium text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors uppercase"
             >
@@ -539,9 +539,9 @@ export default function Home() {
               className="text-sm font-medium text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors uppercase"
             >
               Privacy
-            </Link>
+            </Link> */}
             <Link
-              href="#"
+              href="mailto:hello@contextsync.dev"
               className="text-sm font-medium text-black/50 dark:text-white/50 hover:text-black dark:hover:text-white transition-colors uppercase"
             >
               Contact
