@@ -24,13 +24,13 @@ export default function ConversationDemo() {
           value="openai"
           className="data-[state=active]:bg-cyan-600 data-[state=active]:text-white dark:data-[state=active]:bg-cyan-500 dark:data-[state=active]:text-black uppercase"
         >
-          OpenAI_Assistant
+          ChatGPT
         </TabsTrigger>
         <TabsTrigger
           value="anthropic"
           className="data-[state=active]:bg-cyan-600 data-[state=active]:text-white dark:data-[state=active]:bg-cyan-500 dark:data-[state=active]:text-black uppercase"
         >
-          Anthropic_Assistant
+          Claude
         </TabsTrigger>
       </TabsList>
       <TabsContent value="openai" className="mt-4">
@@ -58,7 +58,7 @@ export default function ConversationDemo() {
               </div>
               <div className="flex-1 border border-black/20 dark:border-white/20 bg-white dark:bg-black p-3 text-black/70 dark:text-white/70">
                 <p>
-                  I'd be happy to help you plan a trip to Japan for next spring! Here's a suggested 10-day itinerary:
+                  I'd be happy to help you plan a trip to Japan for next spring! Here's a suggested 7-day itinerary:
                 </p>
                 <p className="mt-2">
                   <strong className="text-cyan-600 dark:text-cyan-400">DAYS_1-3: TOKYO</strong>
@@ -77,20 +77,12 @@ export default function ConversationDemo() {
                   <li>Hot springs experience</li>
                 </ul>
                 <p className="mt-2">
-                  <strong className="text-cyan-600 dark:text-cyan-400">DAYS_6-8: KYOTO</strong>
+                  <strong className="text-cyan-600 dark:text-cyan-400">DAYS_6-7: KYOTO</strong>
                 </p>
                 <ul className="list-disc pl-5 mt-1 text-black/70 dark:text-white/70">
                   <li>Fushimi Inari Shrine</li>
                   <li>Arashiyama Bamboo Grove</li>
                   <li>Kinkaku-ji (Golden Pavilion)</li>
-                </ul>
-                <p className="mt-2">
-                  <strong className="text-cyan-600 dark:text-cyan-400">DAYS_9-10: OSAKA</strong>
-                </p>
-                <ul className="list-disc pl-5 mt-1 text-black/70 dark:text-white/70">
-                  <li>Osaka Castle</li>
-                  <li>Dotonbori district</li>
-                  <li>Day trip to Nara</li>
                 </ul>
                 <p className="mt-2 text-black/70 dark:text-white/70">
                   Would you like me to provide more details about any specific part of this itinerary?
@@ -181,7 +173,7 @@ export default function ConversationDemo() {
               </div>
               <div className="flex-1 border border-black/20 dark:border-white/20 bg-white dark:bg-black p-3 text-black/70 dark:text-white/70">
                 <p>
-                  I can see from your shared context that you have a 10-day trip to Japan planned for next spring.
+                  I can see from your shared context that you have a 7-day trip to Japan planned for next spring.
                   Here's the itinerary that was saved:
                 </p>
 
@@ -202,22 +194,13 @@ export default function ConversationDemo() {
                   <li>Hot springs experience</li>
                 </ul>
                 <p className="mt-2">
-                  <strong className="text-cyan-600 dark:text-cyan-400">DAYS_6-8: KYOTO</strong>
+                  <strong className="text-cyan-600 dark:text-cyan-400">DAYS_6-7: KYOTO</strong>
                 </p>
                 <ul className="list-disc pl-5 mt-1 text-black/70 dark:text-white/70">
                   <li>Fushimi Inari Shrine</li>
                   <li>Arashiyama Bamboo Grove</li>
                   <li>Kinkaku-ji (Golden Pavilion)</li>
                 </ul>
-                <p className="mt-2">
-                  <strong className="text-cyan-600 dark:text-cyan-400">DAYS_9-10: OSAKA</strong>
-                </p>
-                <ul className="list-disc pl-5 mt-1 text-black/70 dark:text-white/70">
-                  <li>Osaka Castle</li>
-                  <li>Dotonbori district</li>
-                  <li>Day trip to Nara</li>
-                </ul>
-
                 <p className="mt-2 text-black/70 dark:text-white/70">
                   Would you like me to suggest some restaurants or help you with transportation options between these
                   cities?
@@ -252,30 +235,7 @@ export default function ConversationDemo() {
                   <li>Alternative: JR Tokaido Line to Odawara, then bus to Hakone</li>
                 </ul>
 
-                <p className="mt-2">
-                  <strong className="text-cyan-600 dark:text-cyan-400">HAKONE_TO_KYOTO:</strong>
-                </p>
-                <ul className="list-disc pl-5 mt-1 text-black/70 dark:text-white/70">
-                  <li>Take bus/train to Odawara Station, then Shinkansen to Kyoto (approx. 3 hours total)</li>
-                </ul>
-
-                <p className="mt-2">
-                  <strong className="text-cyan-600 dark:text-cyan-400">KYOTO_TO_OSAKA:</strong>
-                </p>
-                <ul className="list-disc pl-5 mt-1 text-black/70 dark:text-white/70">
-                  <li>JR Special Rapid Service (approx. 30 minutes)</li>
-                  <li>Alternative: Hankyu Line from Kawaramachi to Umeda</li>
-                </ul>
-
-                <p className="mt-2">
-                  <strong className="text-cyan-600 dark:text-cyan-400">TRANSPORTATION_PASS_OPTIONS:</strong>
-                </p>
-                <ul className="list-disc pl-5 mt-1 text-black/70 dark:text-white/70">
-                  <li>Japan Rail Pass (7 or 14 day) - covers most JR lines including Shinkansen</li>
-                  <li>ICOCA card for local transit in Kansai region</li>
-                  <li>Suica/Pasmo card for Tokyo area</li>
-                </ul>
-
+                
                 <p className="mt-2 text-black/70 dark:text-white/70">
                   Would you like me to save these transportation recommendations to your shared context as well?
                 </p>

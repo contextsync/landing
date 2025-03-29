@@ -1,6 +1,7 @@
-import { MemoryStick, Database, ArrowRight, Zap, RefreshCw } from "lucide-react"
+import { MemoryStick, Database, ArrowRight, Zap, RefreshCw, ArrowDown } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import SubscriptionForm from "@/components/subscription-form"
 import ConversationDemo from "@/components/conversation-demo"
 import ThemeToggle from "@/components/theme-toggle"
 
@@ -64,7 +65,7 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="w-full py-12 md:py-20 relative overflow-hidden border-b border-black/20 dark:border-white/20">
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,.03)_1px,transparent_1px),linear-gradient(180deg,rgba(0,0,0,.03)_1px,transparent_1px)] dark:bg-[linear-gradient(90deg,rgba(255,255,255,.03)_1px,transparent_1px),linear-gradient(180deg,rgba(255,255,255,.03)_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,.08)_1px,transparent_1px),linear-gradient(180deg,rgba(0,0,0,.08)_1px,transparent_1px)] dark:bg-[linear-gradient(90deg,rgba(255,255,255,.20)_1px,transparent_1px),linear-gradient(180deg,rgba(255,255,255,.20)_1px,transparent_1px)] bg-[size:24px_24px]"></div>
 
           <div className="container px-4 md:px-6 relative z-10">
             <div className="max-w-3xl mx-auto">
@@ -76,18 +77,18 @@ export default function Home() {
                   SEAMLESS MEMORY ACROSS ALL AI ASSISTANTS
                 </h1>
                 <p className="max-w-[600px] text-black/70 dark:text-white/70 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-mono mx-auto">
-                  ContextSync enables your chatbots and agents to share conversation history across different LLM
+                  ContextSync enables your chatbots and agents to share conversation history across different AI
                   providers. Never repeat yourself again.
                 </p>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row pt-4 justify-center">
                   <Button className="gap-1 bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-500 dark:hover:bg-cyan-400 text-white dark:text-black font-medium uppercase">
-                    GET_STARTED <ArrowRight className="h-4 w-4" />
+                    <Link href="#cta">GET_STARTED</Link><ArrowRight className="h-4 w-4" />
                   </Button>
                   <Button
                     variant="outline"
                     className="border-black/20 dark:border-white/20 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-black dark:hover:text-cyan-400 uppercase"
                   >
-                    VIEW_DOCS
+                    <Link href="#cta">VIEW_DOCS</Link><ArrowDown className="h-4 w-4" />
                   </Button>
                 </div>
               </div>
@@ -131,10 +132,10 @@ export default function Home() {
                   FEATURES
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-black dark:text-white uppercase">
-                  WHY CHOOSE ContextSync?
+                  WHY ContextSync?
                 </h2>
                 <p className="max-w-[900px] text-black/70 dark:text-white/70 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-mono">
-                  Our service offers powerful features to enhance your AI interactions.
+                  Powerful features to enhance your AI interactions.
                 </p>
               </div>
             </div>
@@ -196,7 +197,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold text-black dark:text-white uppercase">CONNECT</h3>
                 <p className="text-center text-black/70 dark:text-white/70 font-mono">
-                  Integrate our ContextSync with your AI applications using our simple SDK.
+                  Generate a ContextSync token and add it to Claude, ChatGTP and others.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 border border-black/20 dark:border-white/20 bg-white dark:bg-black p-6">
@@ -226,7 +227,7 @@ export default function Home() {
           id="pricing"
           className="w-full py-20 md:py-32 bg-white dark:bg-black relative overflow-hidden border-b border-black/20 dark:border-white/20"
         >
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,.03)_1px,transparent_1px),linear-gradient(180deg,rgba(0,0,0,.03)_1px,transparent_1px)] dark:bg-[linear-gradient(90deg,rgba(255,255,255,.03)_1px,transparent_1px),linear-gradient(180deg,rgba(255,255,255,.03)_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,.08)_1px,transparent_1px),linear-gradient(180deg,rgba(0,0,0,.08)_1px,transparent_1px)] dark:bg-[linear-gradient(90deg,rgba(255,255,255,.20)_1px,transparent_1px),linear-gradient(180deg,rgba(255,255,255,.20)_1px,transparent_1px)] bg-[size:24px_24px]"></div>
 
           <div className="container px-4 md:px-6 relative z-10">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -247,11 +248,11 @@ export default function Home() {
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold text-black dark:text-white uppercase">STARTER</h3>
                   <p className="text-black/70 dark:text-white/70 font-mono">
-                    Perfect for individuals and small projects.
+                    Perfect for individuals testing the water.
                   </p>
                 </div>
                 <div className="mt-4 flex items-baseline text-3xl font-bold text-black dark:text-white">
-                  $9<span className="text-sm font-normal text-black/50 dark:text-white/50">/month</span>
+                  Free<span className="text-sm font-normal text-black/50 dark:text-white/50">/month</span>
                 </div>
                 <ul className="mt-6 space-y-2 text-sm text-black/70 dark:text-white/70 font-mono">
                   <li className="flex items-center gap-2">
@@ -306,8 +307,11 @@ export default function Home() {
                     <span>Basic Support</span>
                   </li>
                 </ul>
-                <Button className="mt-6 bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-500 dark:hover:bg-cyan-400 text-white dark:text-black font-medium uppercase">
-                  GET_STARTED
+                <Button
+                  asChild
+                  className="mt-6 bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-500 dark:hover:bg-cyan-400 text-white dark:text-black font-medium uppercase"
+                >
+                  <Link href="#cta">GET_STARTED</Link>
                 </Button>
               </div>
               <div className="flex flex-col border border-black/20 dark:border-white/20 bg-white dark:bg-black p-6 relative">
@@ -316,7 +320,7 @@ export default function Home() {
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-2xl font-bold text-black dark:text-white uppercase">PRO</h3>
-                  <p className="text-black/70 dark:text-white/70 font-mono">For powerusers</p>
+                  <p className="text-black/70 dark:text-white/70 font-mono">For power users</p>
                 </div>
                 <div className="mt-4 flex items-baseline text-3xl font-bold text-black dark:text-white">
                   $29<span className="text-sm font-normal text-black/50 dark:text-white/50">/month</span>
@@ -392,7 +396,7 @@ export default function Home() {
                   </li> */}
                 </ul>
                 <Button className="mt-6 bg-cyan-600 hover:bg-cyan-700 dark:bg-cyan-500 dark:hover:bg-cyan-400 text-white dark:text-black font-medium uppercase">
-                  GET_STARTED
+                  <Link href="#cta">GET_STARTED</Link>
                 </Button>
               </div>
               <div className="flex flex-col border border-black/20 dark:border-white/20 bg-white dark:bg-black p-6">
@@ -484,24 +488,27 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="w-full py-20 md:py-32 bg-cyan-600 dark:bg-cyan-500">
+        <section className="w-full py-20 md:py-32 bg-cyan-600 dark:bg-cyan-500" id="cta">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white dark:text-black uppercase">
                   READY TO UNIFY YOUR AI EXPERIENCE?
                 </h2>
-                {/* <p className="max-w-[900px] text-white/70 dark:text-black/70 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-mono">
-                  Join thousands of users who are sharing their history with ContextSync.
-                </p> */}
+                <p className="max-w-[900px] text-white/70 dark:text-black/70 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-mono">
+                  We're almost ready, join our waitlist to get priority access.
+                </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row pt-4">
-                <Button
+                {/* <Button
                   className="gap-1 bg-black hover:bg-zinc-800 dark:bg-black dark:hover:bg-zinc-800 text-white font-medium uppercase"
                   size="lg"
                 >
                   GET_STARTED <ArrowRight className="h-4 w-4" />
-                </Button>
+                </Button> */}
+
+                <SubscriptionForm />
+
               </div>
             </div>
           </div>
